@@ -19,7 +19,7 @@ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
                 <div class='nav-group'>
                     <a href='./model_s.xml' class='nav-button'>Model S</a>
                     <a href='' class='nav-button'>Model 3</a>
-                    <a href='' class='nav-button'>Model X</a>
+                    <a href='./model_x.html' class='nav-button'>Model X</a>
                     <a href='' class='nav-button'>Model Y</a>
                     <a href='' class='nav-button'>Solar Roof</a>
                     <a href='' class='nav-button'>Solar Panels</a>
