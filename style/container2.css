@@ -1,0 +1,11 @@
+.images-container {
+    display:grid;
+    grid-template-columns: 10vw;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content:center;
+}
+
+.images-container p {
+    text-align:center;
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Design Your Model S | Tesla</title>
+    <link rel="icon" type="image/png" href="https://cdn.iconscout.com/icon/free/png-512/tesla-11-569489.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/design_tesla.css">
+
+    <script type="text/javascript" src='../javascript/javascript.js'></script>
+</head>
+
+<body id="#main-body" class="">
+    <!-- NAV -->
+    <div class="nav">
+        <a href='./index.html'>
+            <img id="#nav-logo" class="nav-logo" src='../assets/tesla_logo_title.png' />
+        </a>
+
+        <div class='nav-group'>
+            <a href='./model_s.xml' class='nav-button'>Model S</a>
+            <a href='' class='nav-button'>Model 3</a>
+            <a href='' class='nav-button'>Model X</a>
+            <a href='' class='nav-button'>Model Y</a>
+            <a href='' class='nav-button'>Solar Roof</a>
+            <a href='' class='nav-button'>Solar Panels</a>
+        </div>
+
+        <div class='nav-group'>
+            <a href='' class='nav-button'>Shop</a>
+            <a href='' class='nav-button'>Tesla Account</a>
+            <img src="https://img.icons8.com/material-two-tone/24/000000/menu--v3.png" class='menu-icon' />
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="main-container">
+        <!-- LEFT SECTION -->
+        <div class="left-section">
+            <img id="#main-model-s-image" class='big-car' src='../assets/model_s_white.png'>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="right-section scrollbar-hide">
+
+            <!-- FIRST SECTION -->
+            <div class='details-section'>
+                <!-- HEADER -->
+                <div>
+                    <div class="theme-buttons">
+                        <div id="#theme-toggle" class='motor-button-price' onclick="changeTheme()">
+                            Dark Mode Theme
+                        </div>
+                    </div>
+                    
+                    <h1 class='model-title'>Model S</h1>
+                    <h3 class='model-subtitle'>Estimated delivery: Late 2021</h3>
+                </div>
+
+                <!-- TOP BUTTONS -->
+                <div class='round-rectangle'>
+                    <button class="button-small button-shadow">Purchase Price</button>
+                    <button class="button-small button-disabled">Potential savings*</button>
+                </div>
+
+                <!-- STATS -->
+                <div class='stats-box'>
+                    <div class="top-stat">
+                        <p class='main-text-stat'>520+<span class='small-stat'>mi</span></p>
+                        <p class='stat-legend'>Range (Est.)</p>
+                    </div>
+                    <div class="top-stat">
+                        <p class='main-text-stat'>200<span class='small-stat'>mph</span></p>
+                        <p class='stat-legend'>Top Speed</p>
+                    </div>
+                    <div class="top-stat">
+                        <p class='main-text-stat'>&lt1.99<span class='small-stat'>sec</span></p>
+                        <p class='stat-legend'>0-60 mph</p>
+                    </div>
+                </div>
+
+                <!-- MOTOR DRIVE -->
+                <div class='motor-drive-section'>
+                    <p class='p-legend'>Dual Motor All-Wheel-Drive</p>
+                    <div class='motor-button-price'>
+                        <span>Long Range</span>
+                        <span>$72,990</span>
+                    </div>
+                    <p class='p-legend'>Tri Motor All-Wheel-Drive</p>
+                    <div class='motor-button-price'>
+                        <span>Plaid</span>
+                        <span>$119,990</span>
+                    </div>
+                    <div class='motor-button-price motor-button-price-active'>
+                        <span>Plaid+</span>
+                        <span>$139,990</span>
+                    </div>
+                </div>
+
+                <!-- FEATURE DETAILS -->
+                <div class='centered-div'>
+                    <p class='details-text'>Prices shown without the $1,500 California Clean Fuel Reward and potential
+                        incentives and gas savings of $5,500.<u>Customize</u> your potential savings and incentives.</p>
+                    <button class="button btn-secondary">Feature details</button>
+                </div>
+            </div>
+
+            <!-- UPGRADES SECTION -->
+            <div class='details-section'>
+                <p class='section-title'>Plaid+ Upgrades</p>
+                <p class='section-subtitle'>Included</p>
+                <ul>
+                    <li>Quickest 0-60 mph and 1/4 mile acceleration of any production car ever</li>
+                    <li>0-60 mph: &lt1.99s</li>
+                    <li>1/4 mile: &lt9.0s</li>
+                    <li>1,100+ horsepower</li>
+                    <li>Three high performance motors with carbon-sleeved rotors</li>
+                    <li>Torque vectoring</li>
+                </ul>
+            </div>
+
+            <!-- PAINT -->
+            <div class='details-section'>
+                <p class='section-title'>Paint</p>
+                <div class='stats-box'>
+                    <img src='../assets/white.png' id="#white-paint" class='paint-ball paint-ball-active' onclick="changeColor('#white-paint', 'white')" />
+                    <img src='../assets/black.png' id="#black-paint" class='paint-ball' onclick="changeColor('#black-paint', 'black')" />
+                    <img src='../assets/gray.png' id="#gray-paint" class='paint-ball' onclick="changeColor('#gray-paint', 'gray')" />
+                    <img src='../assets/blue.png' id="#blue-paint" class='paint-ball' onclick="changeColor('#blue-paint', 'blue')" />
+                    <img src='../assets/red.png' id="#red-paint" class='paint-ball' onclick="changeColor('#red-paint' ,'red')" />
+                </div>
+                <div class='section-secondary-subtitles'>
+                    <p class='section-subtitle margin-right'>Pearl White Multi-Coat</p>
+                    <span>Included</span>
+                </div>
+            </div>
+
+            <!-- WHEELS -->
+            <div class='details-section'>
+                <p class='section-title'>Wheels</p>
+                <div class='stats-box'>
+                    <img src='../assets/wheels1.png' class='paint-ball paint-ball-active' />
+                    <img src='../assets/wheels2.png' class='paint-ball' />
+                </div>
+                <div class='section-secondary-subtitles'>
+                    <p class='section-subtitle margin-right'>19" Tempest Wheels</p>
+                    <span>Included</span>
+                </div>
+            </div>
+
+            <!-- INTERIOR -->
+            <div class='details-section'>
+                <p class='section-title'>Interior</p>
+                <div class='stats-box'>
+                    <img src='../assets/interiori_black.png' class='paint-ball' />
+                    <img src='../assets/interiori_white.png' class='paint-ball paint-ball-active' />
+                    <img src='../assets/interiori_cream.png' class='paint-ball' />
+                </div>
+                <div class='section-secondary-subtitles'>
+                    <p class='section-subtitle margin-right'>Black and White</p>
+                    <span>$2,000</span>
+                </div>
+                <div class='centered-div'>
+                    <span>Carbon Fiber Décor</span>
+                    <button class="button btn-secondary margin-top">Feature details</button>
+                </div>
+            </div>
+
+            <!-- SELF DRIVE -->
+            <div class='details-section'>
+                <p class='section-title'>Full Self-Driving Capability</p>
+                <p class='section-subtitle'>$10,000</p>
+                <ul>
+                    <li>Navigate on Autopilot</li>
+                    <li>Auto Lane Change</li>
+                    <li>Autopark</li>
+                    <li>Summon</li>
+                    <li>Full Self-Driving Computer</li>
+                    <li>Traffic Light and Stop Sign Control</li>
+                </ul>
+                <p class='p-legend'>Coming later this year</p>
+                <ul>
+                    <li>Autosteer on city streets</li>
+                </ul>
+                <div class='centered-div'>
+                    <p class='details-text'>The currently enabled features require active driver supervision and do not make the vehicle autonomous. The activation and use of these features are dependent on achieving reliability far in excess of human drivers as demonstrated by billions of miles of experience, as well as regulatory approval, which may take longer in some jurisdictions. As these self-driving features evolve, your car will be continuously upgraded through over-the-air software updates.                    </p>
+                </div>
+                <div class='stats-box'>
+                    <button class="button btn-active">Add</button>
+                    <button class="button btn-secondary">Feature details</button>
+                </div>
+            </div>
+
+            <!-- ORDER -->
+            <div class='details-section'>
+                <p class='section-title'>Order Your Model S</p>
+                <p class='section-subtitle'>Estimated Delivery: Late 2021</p>
+                <div class='stats-box'>
+                    <button class="button btn-active">Continue to payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

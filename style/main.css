@@ -1,0 +1,185 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    color:rgb(70, 70, 70)
+}
+
+:root {
+    --primary: rgb(70, 70, 70);
+    --secondary: #E3DDDD;
+    --white:white;
+    --black:black;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+fieldset {
+    border-radius: 25px;
+}
+
+button {
+    border-radius: 25px;
+    padding:15px 50px 15px 50px;
+    background-color: var(--primary);
+    border:none;
+    color:var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color:var(--primary);
+}
+
+button:focus {
+    outline:0;
+}
+
+button:disabled {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input, textarea {
+    border-radius:25px;
+    padding:15px;
+    border:none;
+    background-color:var(--primary)
+}
+
+textarea {
+    resize: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:4vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-logo {
+    height:1.5vh;
+    margin-left: 10px;
+    margin-right: 10vw;
+}
+
+.nav-button {
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.nav-group {
+    display:flex;
+    flex-direction: row;
+}
+
+.slide-title {
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.slide-subtitle {
+    margin-top: 5px;
+}
+
+.slide-elements {
+    margin: 12vh 0px 12vh 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/1.jfif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.second-slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/2.jfif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.third-slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/3.jfif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fourth-slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/4.jfif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    border-radius: 50px;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 50px;
+    border:3px solid var(--secondary);
+}
