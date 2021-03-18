@@ -15,6 +15,15 @@
     background-position: center center;
 }
 
+.third-slide-model-s {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .slide-header {
     margin: 3vh 0px 2vh 0px;
     font-weight: bold;
@@ -82,7 +91,8 @@
 }
 
 .big-modal-image {
-    height: 90vh;
-    width: 90vw;
+    height: 95vh;
+    width: 95vw;
     display: none;
+    object-fit: cover;
 }
