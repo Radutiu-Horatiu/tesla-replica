@@ -1,11 +1,13 @@
 function switchToCreate() {
     $("#login-form").css("display", "none");
     $("#register-form").css("display", "flex");
+    document.getElementById("fail-form-login").style.display = 'none';
 }
 
 function switchToLogin() {
     $("#login-form").css("display", "flex");
     $("#register-form").css("display", "none");
+    document.getElementById("fail-form-signup").style.display = 'none';
 }
 
 // function to display account activation
@@ -14,6 +16,9 @@ function accountActivated(email) {
 
     // display account activation message
     document.getElementById("successful-form-activation").style.display = 'block'
+
+    // enabling news creation
+    $("#news-creator").css("display", "flex");
 
     // login
     $.ajax({
@@ -25,6 +30,9 @@ function accountActivated(email) {
         success: function (response) {
             var jsonData = JSON.parse(response);
             document.getElementById("user-details-activation").innerText = jsonData.first_name + ' ' + jsonData.last_name
+
+            // enabling edit
+            $(".edit-btn").css("display","block");
         }
     });
 }
@@ -53,10 +61,19 @@ function loginClick() {
                 // user details
                 document.getElementById("user-details").innerText = jsonData.first_name + ' ' + jsonData.last_name
 
+                // setting news producer
+                document.getElementById("news-producer").value = jsonData.first_name + ' ' + jsonData.last_name
+
                 // enabling check
                 document.getElementById("fail-form-login").style.display = 'none';
                 document.getElementById("successful-form-login").style.display = 'block'
                 $("#login-form").css("display", "none");
+                
+                // enabling news creation
+                $("#news-creator").css("display", "flex");
+
+                // enabling edit
+                $(".edit-btn").css("display","block");
             }
             else {
                 // set fail
@@ -74,9 +91,9 @@ function signUpClick() {
     let email = document.getElementById("email-signup").value
     let password = document.getElementById("password-signup").value
 
-    if (first_name != '' ||
-        last_name != '' ||
-        email != '' ||
+    if (first_name != '' &&
+        last_name != '' &&
+        email != '' &&
         password != ''
     ) {
         $.ajax({

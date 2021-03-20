@@ -44,6 +44,65 @@ body {
     font-weight: bold;
 }
 
+.article-input {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 30px;
+    padding: 15px;
+    width: 35vw;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.news-feed-container textarea {
+    border:1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 15px;
+    width: 35vw;
+    height: 25vh;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.news-feed-container select {
+    border:1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 15px;
+    width: 35vw;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.post-edit-buttons textarea {
+    border:1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 15px;
+    width: 35vw;
+    height: 25vh;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.post-edit-buttons select {
+    border:1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 15px;
+    width: 35vw;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
 .p-legend {
     margin-left: 1vw;
 }
@@ -157,8 +216,89 @@ form {
     font-weight: bold;
 }
 
+#news-creator {
+    display: none;
+}
+
+.news-scroll-feed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .failure-text {
     font-size: 1.5rem;
     font-weight: bold;
     color: tomato;
+}
+
+.second-slide-news {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/tesla_news.jfif');
+    background-size: cover;
+    background-position: center center;
+}
+
+.news-feed-container .p-legend {
+    margin-left: 0px !important;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin:10vh 0px 10vh 0px;
+}
+
+.news-item-title {
+    color: var(--black);
+    font-size: 2.5rem;
+    margin:0px;
+}
+
+.news-item-category {
+    color: var(--textSecondary);
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.news-item-author {
+    color: var(--textSecondary);
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.news-item-date {
+    color: var(--textSecondary);
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.news-item-text {
+    text-align: justify;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.date-input {
+    background-color: var(--white);
+    padding: 10px;
+    margin: 5px;
+}
+
+.date-legend {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.edit-btn {
+    display: none;
+}
+
+.post-edit-buttons {
+    display: none;
+    flex-direction: column;
 }
